@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Emanuel Lecaro - Desarrollador Full Stack</title>
+    <meta name="description" content="Portafolio de Angel Emanuel Lecaro - Especializado en Backend, Bases de Datos y Sistemas Web Empresariales">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <i class="fas fa-code"></i> Portfolio
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#resumen" class="nav-link">Resumen</a></li>
+                <li><a href="#competencias" class="nav-link">Competencias</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="hero-code">
+                <span class="code-tag">&lt;developer&gt;</span>
+            </div>
+            <h1>Angel Emanuel Lecaro</h1>
+            <p class="subtitle">Ingeniero Full Stack | Backend Specialist | Database Architect</p>
+            <p class="tagline">Construyendo sistemas seguros, escalables y eficientes.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('resumen').scrollIntoView({behavior: 'smooth'})">Ver Proyectos</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">Contacto</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resumen Ejecutivo -->
+    <section id="resumen" class="resumen">
+        <div class="container">
+            <h2>Experiencia Técnica</h2>
+            <div class="resumen-content">
+                <p>3 años desarrollando soluciones empresariales robustas con foco en:</p>
+                <div class="resumen-grid">
+                    <div class="resumen-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Backend Avanzado</h3>
+                        <p>C#, .NET Core, APIs REST con arquitectura en capas y patrones de diseño</p>
+                    </div>
+                    <div class="resumen-card">
+                        <i class="fas fa-database"></i>
+                        <h3>BD Empresariales</h3>
+                        <p>SQL Server, MySQL con optimización, seguridad, auditoría y alta disponibilidad</p>
+                    </div>
+                    <div class="resumen-card">
+                        <i class="fas fa-globe"></i>
+                        <h3>Full Stack Web</h3>
+                        <p>Plataformas web modernas con Blazor, HTML5, CSS3 y JavaScript</p>
+                    </div>
+                    <div class="resumen-card">
+                        <i class="fas fa-lock"></i>
+                        <h3>Seguridad & DevOps</h3>
+                        <p>Control de accesos, auditoría de datos, planes de contingencia y backup</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competencias -->
+    <section id="competencias" class="competencias">
+        <div class="container">
+            <h2>Áreas de Competencia</h2>
+            <div class="competencias-grid">
+                <!-- Backend -->
+                <div class="competencia-item">
+                    <h3><i class="fas fa-code"></i> Desarrollo Backend</h3>
+                    <ul>
+                        <li>C# (.NET / .NET Core)</li>
+                        <li>ASP.NET Core</li>
+                        <li>APIs REST</li>
+                        <li>Patrones de Diseño (Repository, DTO, DI)</li>
+                        <li>Autenticación y Autorización</li>
+                    </ul>
+                </div>
+
+                <!-- Bases de Datos -->
+                <div class="competencia-item">
+                    <h3><i class="fas fa-database"></i> Gestión de BD</h3>
+                    <ul>
+                        <li>SQL Server y MySQL</li>
+                        <li>Modelado Relacional Normalizado</li>
+                        <li>Procedimientos Almacenados</li>
+                        <li>Triggers y Auditoría</li>
+                        <li>Optimización e Indexación</li>
+                    </ul>
+                </div>
+
+                <!-- Frontend -->
+                <div class="competencia-item">
+                    <h3><i class="fas fa-paint-brush"></i> Desarrollo Frontend</h3>
+                    <ul>
+                        <li>HTML5 y CSS3</li>
+                        <li>JavaScript Avanzado</li>
+                        <li>Bootstrap 5</li>
+                        <li>Diseño Responsivo</li>
+                        <li>UX/UI Moderno</li>
+                    </ul>
+                </div>
+
+                <!-- Blazor -->
+                <div class="competencia-item">
+                    <h3><i class="fas fa-rocket"></i> Blazor y Componentes</h3>
+                    <ul>
+                        <li>Páginas Razor</li>
+                        <li>CRUD Completos</li>
+                        <li>Telerik Blazor Components</li>
+                        <li>Exportación Excel/PDF</li>
+                        <li>Localización (ES/EN)</li>
+                    </ul>
+                </div>
+
+                <!-- Reportes -->
+                <div class="competencia-item">
+                    <h3><i class="fas fa-file-excel"></i> Reportes y Datos</h3>
+                    <ul>
+                        <li>Generación Excel Dinámico</li>
+                        <li>Telerik RadSpreadProcessing</li>
+                        <li>Exportación a PDF</li>
+                        <li>Estructuras Pivote</li>
+                        <li>Formateo Avanzado</li>
+                    </ul>
+                </div>
+
+                <!-- Análisis -->
+                <div class="competencia-item">
+                    <h3><i class="fas fa-tasks"></i> Análisis de Sistemas</h3>
+                    <ul>
+                        <li>Análisis de Requerimientos</li>
+                        <li>Diseño Estructural</li>
+                        <li>Diagramas ER</li>
+                        <li>Modelado de Procesos</li>
+                        <li>Refactorización de Código</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos">
+        <div class="container">
+            <h2>Proyectos Destacados</h2>
+            
+            <div class="filtros">
+                <button class="filtro-btn activo" data-filtro="todos">Todos</button>
+                <button class="filtro-btn" data-filtro="backend">Backend</button>
+                <button class="filtro-btn" data-filtro="web">Web</button>
+                <button class="filtro-btn" data-filtro="bd">Bases de Datos</button>
+            </div>
+
+            <div class="proyectos-grid">
+                <!-- Proyecto 1 -->
+                <div class="proyecto-card" data-categoria="backend,bd">
+                    <div class="proyecto-header">
+                        <i class="fas fa-warehouse"></i>
+                        <h3>Sistema de Inventario y Facturación</h3>
+                    </div>
+                    <p>Sistema empresarial completo para control de productos, precios, stock y facturación.</p>
+                    <div class="proyecto-tech">
+                        <span>C#</span>
+                        <span>.NET Core</span>
+                        <span>SQL Server</span>
+                    </div>
+                    <ul class="proyecto-features">
+                        <li>CRUD completos con lógica de negocio</li>
+                        <li>Procedimientos almacenados avanzados</li>
+                        <li>Normalización de datos</li>
+                        <li>Reportes dinámicos</li>
+                    </ul>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="proyecto-card" data-categoria="web,backend">
+                    <div class="proyecto-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Planificación Estratégica (PEI/PDI)</h3>
+                    </div>
+                    <p>Plataforma para gestión de ejes estratégicos, objetivos, estrategias y acciones institucionales.</p>
+                    <div class="proyecto-tech">
+                        <span>Blazor</span>
+                        <span>Telerik</span>
+                        <span>SQL Server</span>
+                    </div>
+                    <ul class="proyecto-features">
+                        <li>Interfaz Blazor con Telerik Components</li>
+                        <li>Filtros dinámicos avanzados</li>
+                        <li>Exportación a Excel y PDF</li>
+                        <li>APIs REST integradas</li>
+                    </ul>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="proyecto-card" data-categoria="bd">
+                    <div class="proyecto-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Red Social Académica</h3>
+                    </div>
+                    <p>Sistema de red social con usuarios, publicaciones, comentarios y relaciones complejas.</p>
+                    <div class="proyecto-tech">
+                        <span>SQL Server</span>
+                        <span>T-SQL</span>
+                        <span>Triggers</span>
+                    </div>
+                    <ul class="proyecto-features">
+                        <li>Modelado relacional avanzado</li>
+                        <li>Procedimientos almacenados complejos</li>
+                        <li>Triggers para integridad</li>
+                        <li>Optimización e indexación</li>
+                    </ul>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="proyecto-card" data-categoria="web,backend,bd">
+                    <div class="proyecto-header">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>Tech Service / Cómpralo Ya</h3>
+                    </div>
+                    <p>Plataforma integral de gestión de servicios técnicos y comercio electrónico.</p>
+                    <div class="proyecto-tech">
+                        <span>C#</span>
+                        <span>Blazor</span>
+                        <span>SQL Server</span>
+                    </div>
+                    <ul class="proyecto-features">
+                        <li>Gestión de reparaciones con niveles de prioridad</li>
+                        <li>Tienda virtual integrada</li>
+                        <li>Auditoría de datos y seguridad por roles</li>
+                        <li>Planes de contingencia y backup</li>
+                    </ul>
+                </div>
+
+                <!-- Proyecto 5 -->
+                <div class="proyecto-card" data-categoria="web">
+                    <div class="proyecto-header">
+                        <i class="fas fa-newspaper"></i>
+                        <h3>Sistemas Web en PHP</h3>
+                    </div>
+                    <p>Plataformas de gestión de usuarios, noticias y contenidos dinámicos.</p>
+                    <div class="proyecto-tech">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <ul class="proyecto-features">
+                        <li>Gestión de sesiones avanzada</li>
+                        <li>Validaciones complejas</li>
+                        <li>Interfaces responsivas</li>
+                        <li>Control de usuarios</li>
+                    </ul>
+                </div>
+
+                <!-- Proyecto 6 -->
+                <div class="proyecto-card" data-categoria="backend,bd">
+                    <div class="proyecto-header">
+                        <i class="fas fa-lock"></i>
+                        <h3>Seguridad y Auditoría (2025)</h3>
+                    </div>
+                    <p>Implementación de mecanismos avanzados de seguridad, auditoría y planes de contingencia.</p>
+                    <div class="proyecto-tech">
+                        <span>SQL Server</span>
+                        <span>T-SQL</span>
+                        <span>Roles y Permisos</span>
+                    </div>
+                    <ul class="proyecto-features">
+                        <li>Modelo de roles (DBA, DEV, PROD)</li>
+                        <li>Auditoría con Triggers</li>
+                        <li>Backup Full, Diferencial y Logs</li>
+                        <li>DBCC CHECKDB y CHECKSUM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Herramientas -->
+    <section class="herramientas">
+        <div class="container">
+            <h2>Tecnologías y Herramientas</h2>
+            <div class="herramientas-grid">
+                <div class="herramienta">
+                    <h4>Lenguajes</h4>
+                    <p>C# • SQL • PHP • JavaScript</p>
+                </div>
+                <div class="herramienta">
+                    <h4>Frameworks</h4>
+                    <p>.NET Core • ASP.NET Core • Blazor</p>
+                </div>
+                <div class="herramienta">
+                    <h4>Bases de Datos</h4>
+                    <p>SQL Server • MySQL • T-SQL</p>
+                </div>
+                <div class="herramienta">
+                    <h4>Frontend</h4>
+                    <p>HTML5 • CSS3 • Bootstrap 5 • jQuery</p>
+                </div>
+                <div class="herramienta">
+                    <h4>Componentes UI</h4>
+                    <p>Telerik Blazor • SweetAlert2</p>
+                </div>
+                <div class="herramienta">
+                    <h4>Herramientas</h4>
+                    <p>Visual Studio • VS Code • SQL Server Management Studio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section class="estadisticas">
+        <div class="container">
+            <div class="estadistica-item">
+                <h3>3+</h3>
+                <p>Años de Experiencia</p>
+            </div>
+            <div class="estadistica-item">
+                <h3>15+</h3>
+                <p>Proyectos Completados</p>
+            </div>
+            <div class="estadistica-item">
+                <h3>8+</h3>
+                <p>Tecnologías Dominadas</p>
+            </div>
+            <div class="estadistica-item">
+                <h3>100%</h3>
+                <p>Comprometido</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>&lt;contact /&gt;</h2>
+            <p class="contacto-subtitle">Disponible para proyectos y colaboraciones</p>
+            
+            <div class="contacto-methods">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <a href="mailto:lecaroquispe@gmail.com">lecaroquispe@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Teléfono</h3>
+                    <a href="tel:+59165884086">+591 65884086</a>
+                </div>
+            </div>
+
+            <div class="contacto-info">
+                <h3>Conectemos</h3>
+                <div class="redes-sociales">
+                    <a href="https://linkedin.com/in/angel-lecaro" target="_blank" class="red-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Angellec21" target="_blank" class="red-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Portafolio Profesional. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
