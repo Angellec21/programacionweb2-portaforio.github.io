@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angel Emanuel Lecaro - Desarrollador Full Stack & AI Engineer</title>
     <meta name="description" content="Portafolio de Angel Emanuel Lecaro - Ingeniero Full-Stack especializado en Arquitectura de Datos, Backend Empresarial, Mobile y Automatización con IA">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230d1117'/%3E%3Ctext x='50' y='64' font-size='44' font-family='monospace' font-weight='bold' fill='%2358a6ff' text-anchor='middle'%3E%3C/%3E%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -17,6 +21,7 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
                 <li><a href="#resumen" class="nav-link">Resumen</a></li>
                 <li><a href="#competencias" class="nav-link">Competencias</a></li>
                 <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
@@ -43,6 +48,21 @@
                 <button class="btn btn-primary" onclick="document.getElementById('resumen').scrollIntoView({behavior: 'smooth'})">Ver Proyectos</button>
                 <button class="btn btn-secondary" onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">Contacto</button>
             </div>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="sobre-mi">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <p>
+                Ingeniero de software y desarrollador full-stack con más de 3 años de trayectoria diseñando,
+                refactorizando y desplegando aplicaciones empresariales de misión crítica, arquitecturas de
+                datos de alto rendimiento y soluciones avanzadas de automatización e inteligencia artificial.
+                Especializado en la transición de sistemas monolíticos hacia arquitecturas modernas y
+                escalables, combinando la robustez del ecosistema .NET con la flexibilidad de Python y
+                entornos modernos de desarrollo móvil y e-commerce.
+            </p>
         </div>
     </section>
 
@@ -192,11 +212,60 @@
         </div>
     </section>
 
+    <!-- Nivel Técnico -->
+    <section class="nivel-tecnico">
+        <div class="container">
+            <h2>Nivel Técnico</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <div class="skill-label">
+                        <span>SQL Server & Arquitectura de Datos</span>
+                        <span class="skill-nivel">Avanzado</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label">
+                        <span>Desarrollo Backend (.NET & Python)</span>
+                        <span class="skill-nivel">Intermedio - Avanzado</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label">
+                        <span>Desarrollo Frontend & Mobile</span>
+                        <span class="skill-nivel">Intermedio</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 65%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label">
+                        <span>IA Aplicada & Automatización</span>
+                        <span class="skill-nivel">Intermedio</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 60%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label">
+                        <span>Metodologías de Desarrollo</span>
+                        <span class="skill-nivel">Intermedio</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 65%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Proyectos -->
     <section id="proyectos" class="proyectos">
         <div class="container">
             <h2>Proyectos Destacados</h2>
-            
+            <p class="proyectos-intro">
+                Algunos de estos proyectos son sistemas empresariales privados; visita mi
+                <a href="https://github.com/Angellec21" target="_blank" rel="noopener">perfil de GitHub</a>
+                para ver repositorios públicos y contribuciones.
+            </p>
+
             <div class="filtros">
                 <button class="filtro-btn activo" data-filtro="todos">Todos</button>
                 <button class="filtro-btn" data-filtro="backend">Backend</button>

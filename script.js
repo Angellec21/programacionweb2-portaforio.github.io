@@ -129,7 +129,7 @@ const observador = new IntersectionObserver((entries) => {
 });
 
 // Aplicar observador a elementos
-document.querySelectorAll('.resumen-card, .competencia-item, .proyecto-card').forEach(el => {
+document.querySelectorAll('.resumen-card, .competencia-item, .proyecto-card, .skill-item').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'all 0.6s ease';
