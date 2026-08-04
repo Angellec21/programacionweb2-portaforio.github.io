@@ -7,25 +7,25 @@
 }
 
 :root {
-    /* Nord - Paleta formal de desarrollador */
-    --bg-primary: #2e3440;
-    --bg-secondary: #3b4252;
-    --bg-tertiary: #434c5e;
-    --bg-hover: #4c566a;
+    /* GitHub Dark Dimmed - Paleta formal de desarrollador */
+    --bg-primary: #22272e;
+    --bg-secondary: #2d333b;
+    --bg-tertiary: #323942;
+    --bg-hover: #3d444d;
 
-    --text-primary: #eceff4;
-    --text-secondary: #d8dee9;
-    --text-tertiary: #9aa5b7;
+    --text-primary: #adbac7;
+    --text-secondary: #768390;
+    --text-tertiary: #545d68;
 
-    --accent-primary: #81a1c1;
-    --accent-secondary: #88c0d0;
-    --accent-green: #a3be8c;
-    --accent-orange: #d08770;
-    --accent-red: #bf616a;
-    --accent-purple: #5e81ac;
-    --accent-pink: #b48ead;
+    --accent-primary: #539bf5;
+    --accent-secondary: #6cb6ff;
+    --accent-green: #57ab5a;
+    --accent-orange: #c38a3e;
+    --accent-red: #e5534b;
+    --accent-purple: #986ee2;
+    --accent-pink: #b083f0;
 
-    --border-color: #434c5e;
+    --border-color: #444c56;
     --glow-primary: none;
     --glow-secondary: none;
     --shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
@@ -55,7 +55,7 @@ body {
 .navbar {
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(129, 161, 193, 0.2);
+    border-bottom: 1px solid rgba(83, 155, 245, 0.2);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -152,7 +152,7 @@ body {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    border-bottom: 1px solid rgba(129, 161, 193, 0.2);
+    border-bottom: 1px solid rgba(83, 155, 245, 0.2);
 }
 
 .hero-content {
@@ -266,7 +266,7 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(129, 161, 193, 0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(83, 155, 245, 0.2), transparent);
     transition: left 0.5s;
 }
 
@@ -275,7 +275,7 @@ body {
 }
 
 .btn-secondary:hover {
-    background: rgba(129, 161, 193, 0.1);
+    background: rgba(83, 155, 245, 0.1);
     border-color: var(--accent-secondary);
     color: var(--accent-secondary);
     transform: translateY(-2px);
@@ -286,7 +286,7 @@ body {
 .sobre-mi {
     padding: 80px 20px;
     background: var(--bg-primary);
-    border-bottom: 1px solid rgba(129, 161, 193, 0.1);
+    border-bottom: 1px solid rgba(83, 155, 245, 0.1);
 }
 
 .sobre-mi h2 {
@@ -312,7 +312,7 @@ body {
 .nivel-tecnico {
     padding: 100px 20px;
     background: var(--bg-secondary);
-    border-bottom: 1px solid rgba(129, 161, 193, 0.1);
+    border-bottom: 1px solid rgba(83, 155, 245, 0.1);
 }
 
 .nivel-tecnico h2 {
@@ -373,7 +373,7 @@ body {
 .resumen {
     padding: 100px 20px;
     background: var(--bg-primary);
-    border-bottom: 1px solid rgba(129, 161, 193, 0.1);
+    border-bottom: 1px solid rgba(83, 155, 245, 0.1);
     position: relative;
 }
 
@@ -468,7 +468,7 @@ body {
 .competencias {
     padding: 100px 20px;
     background: var(--bg-secondary);
-    border-bottom: 1px solid rgba(129, 161, 193, 0.1);
+    border-bottom: 1px solid rgba(83, 155, 245, 0.1);
 }
 
 .competencias h2 {
@@ -547,7 +547,7 @@ body {
 .proyectos {
     padding: 100px 20px;
     background: var(--bg-primary);
-    border-bottom: 1px solid rgba(129, 161, 193, 0.1);
+    border-bottom: 1px solid rgba(83, 155, 245, 0.1);
 }
 
 .proyectos h2 {
@@ -570,7 +570,7 @@ body {
 .proyectos-intro a {
     color: var(--accent-primary);
     text-decoration: none;
-    border-bottom: 1px solid rgba(129, 161, 193, 0.4);
+    border-bottom: 1px solid rgba(83, 155, 245, 0.4);
     transition: var(--transition);
 }
 
@@ -589,8 +589,8 @@ body {
 
 .filtro-btn {
     padding: 10px 20px;
-    border: 2px solid rgba(129, 161, 193, 0.3);
-    background: rgba(129, 161, 193, 0.05);
+    border: 2px solid rgba(83, 155, 245, 0.3);
+    background: rgba(83, 155, 245, 0.05);
     backdrop-filter: blur(10px);
     color: var(--accent-primary);
     border-radius: 8px;
@@ -610,7 +610,7 @@ body {
     left: 50%;
     width: 0;
     height: 0;
-    background: radial-gradient(circle, rgba(129, 161, 193, 0.3), transparent);
+    background: radial-gradient(circle, rgba(83, 155, 245, 0.3), transparent);
     transform: translate(-50%, -50%);
     transition: var(--transition);
     border-radius: 50%;
@@ -624,7 +624,7 @@ body {
 
 .filtro-btn:hover,
 .filtro-btn.activo {
-    background: rgba(129, 161, 193, 0.15);
+    background: rgba(83, 155, 245, 0.15);
     color: var(--text-primary);
     border-color: var(--accent-secondary);
     transform: translateY(-2px);
@@ -659,7 +659,7 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(129, 161, 193, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(83, 155, 245, 0.1), transparent);
     transition: left 0.6s;
 }
 
@@ -719,25 +719,25 @@ body {
 
 .proyecto-tech span {
     display: inline-block;
-    background: rgba(129, 161, 193, 0.1);
+    background: rgba(83, 155, 245, 0.1);
     color: var(--accent-primary);
     padding: 0.4rem 0.8rem;
     border-radius: 6px;
     font-family: 'Fira Code', monospace;
     font-size: 0.8rem;
     font-weight: 600;
-    border: 1px solid rgba(129, 161, 193, 0.3);
+    border: 1px solid rgba(83, 155, 245, 0.3);
     transition: var(--transition);
 }
 
 .proyecto-card:hover .proyecto-tech span {
-    background: rgba(129, 161, 193, 0.2);
+    background: rgba(83, 155, 245, 0.2);
 }
 
 .proyecto-features {
     list-style: none;
     padding: 1.5rem;
-    border-top: 1px solid rgba(129, 161, 193, 0.2);
+    border-top: 1px solid rgba(83, 155, 245, 0.2);
 }
 
 .proyecto-features li {
@@ -922,7 +922,7 @@ body {
     justify-content: center;
     width: 50px;
     height: 50px;
-    background: rgba(129, 161, 193, 0.15);
+    background: rgba(83, 155, 245, 0.15);
     color: var(--accent-primary);
     border-radius: 50%;
     text-decoration: none;
@@ -932,7 +932,7 @@ body {
 }
 
 .red-link:hover {
-    background: rgba(129, 161, 193, 0.3);
+    background: rgba(83, 155, 245, 0.3);
     color: var(--accent-secondary);
     border-color: var(--accent-primary);
     transform: translateY(-5px);
