@@ -31,17 +31,26 @@ filtros.forEach(filtro => {
 
         const categoriaSeleccionada = filtro.getAttribute('data-filtro');
 
-        proyectos.forEach(proyecto => {
+        proyectos.forEach((proyecto, indice) => {
             const categorias = proyecto.getAttribute('data-categoria');
+            const coincide = categoriaSeleccionada === 'todos' || categorias.includes(categoriaSeleccionada);
 
-            if (categoriaSeleccionada === 'todos' || categorias.includes(categoriaSeleccionada)) {
+            if (coincide) {
                 proyecto.style.display = 'flex';
-                setTimeout(() => {
+                proyecto.style.transitionDelay = `${indice * 60}ms`;
+                requestAnimationFrame(() => {
                     proyecto.style.opacity = '1';
                     proyecto.style.transform = 'scale(1)';
-                }, 10);
+                });
             } else {
-                proyecto.style.display = 'none';
+                proyecto.style.transitionDelay = '0ms';
+                proyecto.style.opacity = '0';
+                proyecto.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    if (proyecto.style.opacity === '0') {
+                        proyecto.style.display = 'none';
+                    }
+                }, 300);
             }
         });
     });
@@ -116,24 +125,35 @@ function mostrarAlerta(mensaje, tipo) {
 
 // ==================== SCROLL SUAVE Y ANIMACIONES ====================
 
-// Observador de intersección para animaciones al scroll
+// Observador de intersección para animaciones al scroll (estilo AOS: fade-up escalonado)
 const observador = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            const el = entry.target;
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+            observador.unobserve(el);
+            // Al terminar la revelación, se limpia la transición inline
+            // para que el hover vuelva a usar var(--transition) sin retraso.
+            el.addEventListener('transitionend', () => {
+                el.style.transition = '';
+            }, { once: true });
         }
     });
 }, {
-    threshold: 0.1
+    threshold: 0.15
 });
 
-// Aplicar observador a elementos
-document.querySelectorAll('.resumen-card, .competencia-item, .proyecto-card, .skill-item').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'all 0.6s ease';
-    observador.observe(el);
+// Aplicar observador a elementos, escalonando el retraso según su posición dentro de cada grupo
+const gruposAnimados = document.querySelectorAll('.resumen-grid, .competencias-grid, .proyectos-grid, .skills-list');
+
+gruposAnimados.forEach(grupo => {
+    Array.from(grupo.children).forEach((el, indice) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(24px)';
+        el.style.transition = `opacity 0.7s ease-out ${Math.min(indice * 100, 450)}ms, transform 0.7s ease-out ${Math.min(indice * 100, 450)}ms`;
+        observador.observe(el);
+    });
 });
 
 // ==================== CONTADOR DE ESTADÍSTICAS ====================
