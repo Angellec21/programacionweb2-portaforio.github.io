@@ -316,7 +316,8 @@ body::before {
 }
 
 .sobre-mi h2 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+    font-weight: 800;
     margin-bottom: 2rem;
     text-align: center;
     color: var(--accent-primary);
@@ -347,7 +348,8 @@ body::before {
 }
 
 .nivel-tecnico h2 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+    font-weight: 800;
     margin-bottom: 3rem;
     text-align: center;
     color: var(--accent-primary);
@@ -414,7 +416,8 @@ body::before {
 }
 
 .resumen h2 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+    font-weight: 800;
     margin-bottom: 3rem;
     text-align: center;
     color: var(--accent-primary);
@@ -442,18 +445,12 @@ body::before {
     position: relative;
 }
 
-.resumen-grid:has(.resumen-card:hover) .resumen-card:not(:hover) {
-    filter: blur(3px) brightness(0.6);
-    transform: scale(0.97);
-}
-
 .resumen-card {
-    background: rgba(10, 10, 10, 0.6);
-    backdrop-filter: blur(10px);
+    background: transparent;
     padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid rgba(91, 124, 153, 0.2);
-    text-align: center;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    text-align: left;
     transition: var(--transition);
     position: relative;
     overflow: hidden;
@@ -473,11 +470,8 @@ body::before {
 }
 
 .resumen-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-4px);
     border-color: var(--accent-primary);
-    background: rgba(91, 124, 153, 0.05);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
-    filter: blur(0);
     z-index: 10;
 }
 
@@ -486,7 +480,8 @@ body::before {
 }
 
 .resumen-card i {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+    font-weight: 800;
     color: var(--accent-primary);
     margin-bottom: 1rem;
     transition: var(--transition);
@@ -516,7 +511,8 @@ body::before {
 }
 
 .competencias h2 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+    font-weight: 800;
     margin-bottom: 3rem;
     text-align: center;
     color: var(--accent-primary);
@@ -535,30 +531,20 @@ body::before {
     gap: 2rem;
 }
 
-.competencias-grid:has(.competencia-item:hover) .competencia-item:not(:hover) {
-    filter: blur(4px) brightness(0.5);
-    transform: scale(0.95);
-}
-
 .competencia-item {
-    background: rgba(91, 124, 153, 0.03);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(91, 124, 153, 0.2);
+    background: transparent;
+    border: 1px solid var(--border-color);
     color: var(--text-primary);
     padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
     transition: var(--transition);
     position: relative;
     overflow: hidden;
 }
 
 .competencia-item:hover {
-    transform: translateY(-6px);
+    transform: translateY(-4px);
     border-color: var(--accent-primary);
-    background: rgba(91, 124, 153, 0.08);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
-    filter: blur(0);
     z-index: 10;
 }
 
@@ -605,7 +591,8 @@ body::before {
 }
 
 .proyectos h2 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+    font-weight: 800;
     margin-bottom: 1rem;
     text-align: center;
     color: var(--accent-primary);
@@ -695,17 +682,11 @@ body::before {
     gap: 2rem;
 }
 
-.proyectos-grid:has(.proyecto-card:hover) .proyecto-card:not(:hover) {
-    filter: blur(5px) brightness(0.4);
-    transform: scale(0.95);
-}
-
 .proyecto-card {
-    background: rgba(10, 10, 10, 0.6);
-    backdrop-filter: blur(10px);
-    border-radius: 12px;
+    background: transparent;
+    border-radius: 4px;
     overflow: hidden;
-    border: 1px solid rgba(91, 124, 153, 0.2);
+    border: 1px solid var(--border-color);
     transition: var(--transition);
     display: flex;
     flex-direction: column;
@@ -728,16 +709,14 @@ body::before {
 }
 
 .proyecto-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-4px);
     border-color: var(--accent-primary);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.45);
-    filter: blur(0);
     z-index: 10;
 }
 
 .proyecto-header {
-    background: linear-gradient(135deg, rgba(91, 124, 153, 0.15), rgba(63, 79, 92, 0.15));
-    border-bottom: 1px solid rgba(91, 124, 153, 0.3);
+    background: transparent;
+    border-bottom: 1px solid var(--border-color);
     color: var(--text-primary);
     padding: 2rem;
     display: flex;
@@ -827,7 +806,8 @@ body::before {
 }
 
 .herramientas h2 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+    font-weight: 800;
     margin-bottom: 3rem;
     text-align: center;
     color: var(--accent-primary);
@@ -846,19 +826,17 @@ body::before {
 }
 
 .herramienta {
-    background: linear-gradient(135deg, rgba(91, 124, 153, 0.1), rgba(63, 79, 92, 0.1));
+    background: transparent;
     color: var(--text-primary);
     padding: 2rem;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-align: left;
     border: 1px solid var(--border-color);
     transition: var(--transition);
 }
 
 .herramienta:hover {
     border-color: var(--accent-primary);
-    background: linear-gradient(135deg, rgba(91, 124, 153, 0.15), rgba(63, 79, 92, 0.15));
 }
 
 .herramienta h4 {
@@ -889,7 +867,7 @@ body::before {
 }
 
 .estadistica-item h3 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
     color: var(--accent-primary);
@@ -909,7 +887,8 @@ body::before {
 }
 
 .contacto h2 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+    font-weight: 800;
     margin-bottom: 1rem;
     text-align: center;
     color: var(--accent-primary);
@@ -946,7 +925,8 @@ body::before {
 }
 
 .contact-item i {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+    font-weight: 800;
     color: var(--accent-primary);
     margin-bottom: 1rem;
 }
